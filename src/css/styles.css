@@ -184,3 +184,16 @@ a {
   height: inherit;
   flex-wrap: inherit;
 }
+
+.social-network {
+  margin-top: 50px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-network__link img {
+  height: 40px;
+}

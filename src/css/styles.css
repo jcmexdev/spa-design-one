@@ -41,7 +41,7 @@ body {
   background-color: var(--background-page);
   font-family: "poppins";
   color: var(--dark-blue);
-  width: 100%;
+  max-width: 100%;
   min-width: 320px;
 }
 
@@ -279,17 +279,17 @@ a {
 }
 
 .app {
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
 }
 
 .app__right {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 10%;
+  padding: 0px 6%;
 }
 
 .app__right h1 {
@@ -327,20 +327,16 @@ a {
   color: var(--gray);
 }
 
-.app__left {
-  height: 100%;
-}
-
 .app__left figure {
   margin: 0px;
-  height: 100%;
 }
 
 .app__left figure img {
-  height: 100%;
+  max-width: 320px;
   border-radius: 54px;
   box-shadow: -20px 33px 56px var(--gray-shadow);
 }
+
 .screen-shots {
   display: flex;
   flex-direction: column;
@@ -505,6 +501,24 @@ a {
   .service__card p {
     margin-top: 0;
   }
+
+  .app {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .app:last-of-type {
+    flex-direction: column;
+  }
+
+  .app__left {
+    padding-top: 4rem;
+  }
+
+  .app__right {
+    text-align: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -539,6 +553,12 @@ a {
   .service__card {
     width: 85%;
   }
+
+  .app_right h1 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 16px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -550,10 +570,16 @@ a {
   .hero__right figure img {
     max-width: 280px;
     border-radius: 54px;
-    box-shadow: none;
   }
 
   .service__card {
     width: 100%;
+  }
+
+  .app__left h1 {
+    font-size: 2rem;
+  }
+  .app__right h1 {
+    font-size: 2rem;
   }
 }

@@ -362,6 +362,8 @@ a {
 
 .screens__img {
   max-width: 300px;
+  border-radius: 34px;
+  box-shadow: -20px 33px 56px var(--gray-shadow);
 }
 
 .screens p {

@@ -307,9 +307,7 @@ a {
 .app__actions a {
   background-color: var(--blue);
   color: var(--white);
-  height: 50px;
-  line-height: 50px;
-  padding: 0px 34px;
+  padding: 10px 34px;
   border-radius: 50px 0px 50px 50px;
   font-weight: 500;
   box-shadow: 0px 20px 46px var(--blue-shadow);
@@ -447,6 +445,14 @@ a {
 
   .social-network .social-network__link:last-child {
     margin-right: 0rem;
+  }
+
+  .app__left {
+    padding-left: 3rem;
+  }
+
+  .app__rigth {
+    padding-left: 20%;
   }
 }
 

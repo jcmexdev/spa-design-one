@@ -154,6 +154,7 @@ a {
   border-radius: 50px 0px 50px 50px;
   font-weight: 500;
   box-shadow: 0px 20px 46px var(--blue-shadow);
+  text-align: center;
 }
 
 .hero__actions span {
@@ -417,6 +418,7 @@ a {
     padding: 10px 3rem;
     display: initial;
   }
+
   .container {
     padding: 0px 16px;
   }
@@ -433,7 +435,21 @@ a {
   .hero__left p {
     font-size: 18px;
   }
+
+  .social-network {
+    flex-wrap: wrap;
+  }
+
+  .social-network__link {
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+
+  .social-network .social-network__link:last-child {
+    margin-right: 0rem;
+  }
 }
+
 @media screen and (max-width: 767px) {
 }
 

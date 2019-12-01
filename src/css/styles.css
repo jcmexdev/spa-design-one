@@ -30,13 +30,18 @@
   --gray-shadow: rgba(112, 112, 112, 0.11);
 }
 
+html,
 body {
   margin: 0px;
   padding: 0px;
+}
+
+body {
   font-size: 16px;
   background-color: var(--background-page);
   font-family: "poppins";
   color: var(--dark-blue);
+  width: 100%;
 }
 
 a {
@@ -109,7 +114,7 @@ a {
   color: var(--white);
   font-size: 1.25rem;
   display: block;
-  padding: 0px 3rem;
+  padding: 10px 3rem;
   text-decoration: none;
   border-radius: 30px;
   background-color: var(--blue);
@@ -179,6 +184,7 @@ a {
 }
 
 .hero__right figure img {
+  margin: 0 1rem;
   height: 100%;
   border-radius: 54px;
   box-shadow: -20px 33px 56px var(--gray-shadow);
@@ -197,11 +203,10 @@ a {
 }
 
 .social-network {
-  /* margin: 70px 0px; */
   width: 100%;
   min-height: 30vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -337,7 +342,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -347,8 +352,8 @@ a {
 }
 
 .screen-shots__item {
-  width: 250px;
-  text-align: center;
+  /* width: 250px; */
+  /* text-align: center; */
 }
 
 .screen-shots__img {
@@ -367,14 +372,14 @@ a {
   font-size: 42px;
   font-weight: 500;
   color: var(--dark);
+  margin-bottom: 1rem;
 }
 
 .header,
 .hero,
 .social-network,
 .services,
-.app,
-.screen-shots {
+.app {
   margin-bottom: 50px;
 }
 
@@ -451,8 +456,8 @@ a {
     padding-left: 3rem;
   }
 
-  .app__rigth {
-    padding-left: 20%;
+  .footer .follow a img:hover {
+    transform: scale(1);
   }
 }
 

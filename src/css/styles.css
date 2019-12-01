@@ -150,9 +150,7 @@ a {
 .hero__actions a:first-child {
   background-color: var(--blue);
   color: var(--white);
-  height: 50px;
-  line-height: 50px;
-  padding: 0px 34px;
+  padding: 10px 34px;
   border-radius: 50px 0px 50px 50px;
   font-weight: 500;
   box-shadow: 0px 20px 46px var(--blue-shadow);
@@ -418,6 +416,22 @@ a {
     font-size: 1rem;
     padding: 10px 3rem;
     display: initial;
+  }
+  .container {
+    padding: 0px 16px;
+  }
+
+  .hero__left {
+    padding: 0rem 3rem;
+  }
+
+  .hero__left h1 {
+    font-size: 55px;
+    line-height: 4rem;
+  }
+
+  .hero__left p {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) {

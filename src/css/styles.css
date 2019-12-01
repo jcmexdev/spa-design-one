@@ -198,6 +198,11 @@ a {
   flex-wrap: inherit;
 }
 
+.border-bottom {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 2rem;
+}
+
 .social-network {
   width: 100%;
   min-height: 30vh;
@@ -435,6 +440,14 @@ a {
   .hero__left p {
     font-size: 18px;
   }
+
+  .social-network {
+    flex-wrap: wrap;
+  }
+
+  .social-network__link img {
+    margin: 2rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -467,6 +480,10 @@ a {
   .hero__right figure img {
     border-radius: 34px;
   }
+
+  .social-network__link img {
+    margin: 1rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -484,15 +501,30 @@ a {
     flex-direction: column;
     margin-top: 1rem;
   }
+
   .hero__actions span {
     margin: 1.2rem 0rem;
+  }
+
+  .social-network {
+    flex-direction: column;
+  }
+
+  .social-network__link img {
+    height: 30px;
+    margin: 0.8rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   .hero__left h1 {
     font-size: 2rem;
-
     margin-bottom: 16px;
+  }
+
+  .hero__right figure img {
+    max-width: 280px;
+    border-radius: 54px;
+    box-shadow: none;
   }
 }

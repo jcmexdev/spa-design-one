@@ -9,14 +9,18 @@
     <link rel="stylesheet" href="src/css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="header__nav">
           <div class="header__left">
             <figure class="header__img-container">
-              <img src="https://via.placeholder.com/60x60" alt="icon-page" />
+              <img
+                src="https://via.placeholder.com/60x60"
+                alt="icon-page"
+                id="burger"
+              />
             </figure>
-            <ul class="header__menu">
+            <ul class="header__menu" id="menu">
               <li class="header__list-item"><a href="#home">Home</a></li>
               <li class="header__list-item">
                 <a href="#download">Download</a>
@@ -33,7 +37,7 @@
           </div>
         </nav>
       </div>
-    </header> -->
+    </header>
 
     <section class="hero">
       <div class="container">
@@ -213,5 +217,31 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const burger = document.querySelector("#burger");
+      const menu = document.querySelector("#menu");
+      const tablet = window.matchMedia("screen and (max-width:767px)");
+
+      const handleMenu = () => {
+        if (menu.classList.contains("active")) {
+          menu.classList.remove("active");
+        } else {
+          menu.classList.add("active");
+        }
+      };
+
+      const handleResize = event => {
+        if (event.matches) {
+          burger.addEventListener("click", handleMenu);
+          menu.addEventListener("click", handleMenu);
+        } else {
+          burger.removeEventListener("click", handleMenu);
+          menu.removeEventListener("click", handleMenu);
+        }
+      };
+      handleResize(tablet);
+      tablet.addListener(handleResize);
+    </script>
   </body>
 </html>

@@ -3,9 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      SPA by Juan Carlos García Esquivel
-    </title>
+    <!-- Primary Meta Tags -->
+    <title>Single Page Application | JCMEXDEV</title>
+    <meta name="title" content="Single Page Application | JCMEXDEV" />
+    <meta
+      name="description"
+      content="This is a demo design for a page make with pure css, html5 and JS vanilla."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://jcmexdev.github.io/spa-design-one/"
+    />
+    <meta property="og:title" content="Single Page Application | JCMEXDEV" />
+    <meta
+      property="og:description"
+      content="This is a demo design for a page make with pure css, html5 and JS vanilla."
+    />
+    <meta property="og:image" content="https://i.imgur.com/1XICKtr.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://jcmexdev.github.io/spa-design-one/"
+    />
+    <meta
+      property="twitter:title"
+      content="Single Page Application | JCMEXDEV"
+    />
+    <meta
+      property="twitter:description"
+      content="This is a demo design for a page make with pure css, html5 and JS vanilla."
+    />
+    <meta property="twitter:image" content="https://i.imgur.com/1XICKtr.png" />
     <link rel="stylesheet" href="src/css/styles.css" />
   </head>
   <body>
@@ -42,9 +75,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero__left">
-          <h1>
-            Best Mobile Apps Showcase
-          </h1>
+          <h1>Best Mobile Apps Showcase</h1>
           <p>
             We provide the best service by application. You can try yourself.
             please feedback to us. It's always appreciate .
@@ -129,9 +160,7 @@
           </figure>
         </div>
         <div class="app__right">
-          <h1>
-            Built The App That Everyone Love.
-          </h1>
+          <h1>Built The App That Everyone Love.</h1>
           <p>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -147,9 +176,7 @@
     <section class="app" id="app-two">
       <div class="container">
         <div class="app__right">
-          <h1>
-            Easy and Perfect Solution For Your Apps.
-          </h1>
+          <h1>Easy and Perfect Solution For Your Apps.</h1>
           <p>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -198,9 +225,7 @@
     </section>
     <footer class="footer">
       <div class="container">
-        <p>
-          Created with 💗 by @jcmexdev
-        </p>
+        <p>Created with 💗 by @jcmexdev</p>
         <div class="follow">
           <a href="https://www.twitter.com/jcmexdev"
             ><img src="src/img/twitter.png" alt="twitter"
@@ -219,25 +244,25 @@
     </footer>
 
     <script>
-      const burger = document.querySelector("#burger");
-      const menu = document.querySelector("#menu");
-      const tablet = window.matchMedia("screen and (max-width:767px)");
+      const burger = document.querySelector('#burger');
+      const menu = document.querySelector('#menu');
+      const tablet = window.matchMedia('screen and (max-width:767px)');
 
       const handleMenu = () => {
-        if (menu.classList.contains("active")) {
-          menu.classList.remove("active");
+        if (menu.classList.contains('active')) {
+          menu.classList.remove('active');
         } else {
-          menu.classList.add("active");
+          menu.classList.add('active');
         }
       };
 
-      const handleResize = event => {
+      const handleResize = (event) => {
         if (event.matches) {
-          burger.addEventListener("click", handleMenu);
-          menu.addEventListener("click", handleMenu);
+          burger.addEventListener('click', handleMenu);
+          menu.addEventListener('click', handleMenu);
         } else {
-          burger.removeEventListener("click", handleMenu);
-          menu.removeEventListener("click", handleMenu);
+          burger.removeEventListener('click', handleMenu);
+          menu.removeEventListener('click', handleMenu);
         }
       };
       handleResize(tablet);
